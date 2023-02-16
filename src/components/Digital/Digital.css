@@ -1,0 +1,109 @@
+.digital-container{
+    margin-top: 100px;
+}
+.digital-body{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.digital-left {
+    width: 45%;
+}
+.digital-left img{
+    width: 350px;
+}
+.digital-right{
+    width:65%;
+    background: rgb(243, 243, 243);
+    padding: 50px;
+}
+.digital-right .head{
+    font-size: 35px;
+}
+.digital-right  p{
+    margin-top: 25px;
+}
+.counter {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    gap: 50px;
+}
+.counter > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%/3;
+}
+.counter > div h3{
+    font-size: 35px;
+    color: gray;
+    font-weight: normal;
+}
+.counter > div p{
+    font-size: 18px;
+    color: gray;
+}
+.digital-right button{
+    margin-top: 50px;
+    padding: 15px 25px 15px 25px;
+    color: #fff;
+    background: #000;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.digital-right button:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width:768px) {
+    .digital-body{
+        margin-left:0px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .digital-left{
+        width: 100%;
+    }
+    .digital-right{
+        width:100%;  
+    }
+}
+@media screen and (max-width:480px) {
+    .digital-body{
+        margin-left:0px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .digital-right{
+        width:100%;
+        padding: 25px;
+    }
+    .digital-left{
+        width: 100%;
+    }
+    .counter {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .counter > div h3{
+        font-size: 30px;
+    }
+    .digital-right  p{
+        margin-top: 10px;
+    }
+    .digital-left img{
+        width: 250px;
+        margin-top: 25px;
+    }
+}

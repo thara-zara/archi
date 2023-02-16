@@ -1,0 +1,153 @@
+.hero-container{
+    width: 100%;
+}
+.hero-body{
+    width: 100%;
+    position: relative;
+}
+.hero-txt{
+    text-transform: capitalize;
+    position: absolute;
+    top: 25%;
+    margin-left: 50px;
+    width: 100%;
+}
+.hero-txt h3{
+    font-size:75px;
+    width:75%;
+    color: #fff;
+    font-weight: normal;
+}
+.hero-txt button{
+    margin-top:25px;
+    padding: 15px 25px 15px 25px;
+    color: #fff;
+    background: #000;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.hero-txt button:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-gap: 50px;
+    position:absolute;
+    bottom: -200px;
+    z-index: 1000;
+}
+.card{
+    width:100%/3;
+    border: 1px solid rgb(206, 206, 206); 
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    text-transform: capitalize;
+    background: #ffff;
+    cursor: pointer;
+}
+/* .card:hover img{
+    rotate: 50deg;
+} */
+.card-img{
+    width: 100px;
+}
+.card-img img{
+    width: 100%;
+    animation: myrotate 3s infinite linear;
+}
+@keyframes myrotate{
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    100%{
+        rotate:0deg;
+    }
+}
+.card-head{
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.card-content{
+    margin-top: 25px;
+    color: gray;
+}
+.card-go{
+    margin-top: 25px;
+    cursor: pointer;
+}
+.card-go i{
+    margin-left: 25px;
+}
+.slider{
+    z-index: -1;
+}
+.slider .slides{
+    width:100%;
+    height: 700px;
+}
+.slider .slides img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:768px) {
+    .hero-txt h3{
+        font-size:50px;
+    }
+    .slider .slides{
+        width:100%;
+        height:300px;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        position: relative;
+        bottom: -50px;
+        grid-row-gap: 25px;
+    }
+    .card{
+        width:100%/3;
+        height: 300px;
+    }
+    .card-img{
+        width: 75px;
+    }
+}
+@media screen and (max-width:480px) {
+    .hero-txt h3{
+        font-size:35px;
+    }
+    .slider .slides{
+        width:100%;
+        height:300px;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        position: relative;
+        bottom: -50px;
+        margin-left: 25px;
+        margin-right: 25px;
+        grid-row-gap: 10px;
+    }
+    .card{
+        width:100%/3;
+        height: 300px;
+    }
+    .card-img{
+        width: 75px;
+    }
+}

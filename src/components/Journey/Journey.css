@@ -1,0 +1,62 @@
+.j-container{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+.j-container h3{
+    text-align: center;
+    font-weight: normal;
+    font-size: 35px;
+}
+.j-container .sub{
+    margin-top: 25px;
+    text-align: center;
+}
+.j-card{
+    margin-top: 50px;
+    text-align: left !important;
+}
+.j-slider .jcard{
+    width: 100px;
+    overflow: hidden;
+}
+.jcard img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    cursor: grab;
+}
+.jcard img:hover{
+   margin-left: 10px;
+   transition: 0.3s ease-in-out;
+}
+.jcard h2{
+    font-weight: normal;
+    margin-top: 25px;
+    text-transform: capitalize;
+    color: rgb(55, 55, 55);
+}
+.jcard p{
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: gray;
+}
+.j-slider{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 480px;
+  }
+  
+
+@media screen and (max-width:480px) {
+    .j-container{
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 100px;
+    }
+}
+  
